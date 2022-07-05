@@ -9,7 +9,7 @@ export class ConnectedList extends Component {
   render() {
     return (
       <div>
-        <h2 className={s.titulo}>Películas Favoritas</h2>
+        <h2 className={s.titulo}>Favorites Movies</h2>
         <div className={s.contout}>
           {this.props.movies?.map((e, index) => (
             <div key={index} className={s.continside}>
