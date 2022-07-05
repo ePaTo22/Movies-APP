@@ -1,0 +1,49 @@
+.navbar {
+  height: 56px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #38496c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+.moviesapp {
+  font-size: x-large;
+  color: white;
+  font-weight: 600;
+}
+
+.img {
+  margin-left: 15px;
+  width: 50px;
+  height: 45px;
+}
+
+.hf {
+  color: aliceblue;
+  font-size: large;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.home {
+  text-decoration: none;
+  margin: 5px;
+  font-size: large;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+.fav {
+  text-decoration: none;
+  margin: 5px;
+  font-size: large;
+  color: aliceblue;
+  font-weight: 600;
+}
