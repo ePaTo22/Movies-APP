@@ -40,7 +40,6 @@ export function MovieExplorer({ initialMovies }: Props) {
   const [selectedId, setSelectedId] = useState(initialMovies[0]?.id);
   const [favorites, setFavorites] = useState<number[]>([]);
   const [loading, setLoading] = useState(false);
-  const [source, setSource] = useState<"curated" | "tmdb">("curated");
 
   const selectedMovie = useMemo(
     () => movies.find((movie) => movie.id === selectedId) ?? movies[0],
@@ -65,7 +64,6 @@ export function MovieExplorer({ initialMovies }: Props) {
       const data = (await response.json()) as ApiResponse;
 
       setMovies(data.movies);
-      setSource(data.source);
       setSelectedId(data.movies[0]?.id);
     } finally {
       setLoading(false);
@@ -123,10 +121,6 @@ export function MovieExplorer({ initialMovies }: Props) {
                 <p className="text-sm font-semibold uppercase tracking-[.22em] text-cyan-200">CineStack</p>
                 <h1 className="text-xl font-semibold leading-none sm:text-2xl">Movie Discovery Lab</h1>
               </div>
-            </div>
-            <div className="flex items-center gap-2 rounded-full border border-white/10 bg-black/25 px-3 py-2 text-sm text-white/75">
-              <span className={`size-2 rounded-full ${source === "tmdb" ? "bg-emerald-300" : "bg-amber-300"}`} />
-              {source === "tmdb" ? "Live TMDb data" : "Curated no-key mode"}
             </div>
           </header>
 
