@@ -1,38 +1,31 @@
 {
-  "name": "12-react-redux",
-  "version": "1.0.0",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^13.1.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.4.0",
-    "react-redux": "^7.2.8",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "redux": "^4.1.2",
-    "redux-thunk": "^2.3.0"
-  },
+  "name": "cinestack",
+  "version": "2.0.0",
+  "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "^16.2.9",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.2",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^16.2.9",
+    "postcss": "^8.5.16",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^5.7.2"
+  },
+  "overrides": {
+    "postcss": "^8.5.16"
   }
 }
